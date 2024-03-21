@@ -1,0 +1,40 @@
+def descobrirAlien():   
+    antenasNum = int(input('Quantas antenas o alien tinha?'))
+    olhosNum = int(input('Quntos olhos o alien tinha?')) 
+    
+    if antenasNum >= 3 and olhosNum <= 4:
+        print('O alien é um Marciano')
+    elif antenasNum <= 6 and olhosNum >=2:
+        print('O alien é um Saturniano')
+    elif antenasNum <= 2 and olhosNum <= 3:
+        print('O alien é um Mercuriano')
+    else:
+        print('Alien não identificado')
+        
+
+#descobrirAlien()
+
+def descobrirDDD():
+
+    DDDs = {
+    11 : 'São Paulo',
+    19 : 'Campinas',
+    21 : 'Rio de Janeiro',
+    27 : 'Vitória',
+    31 : 'Belo Horizonte',
+    32 : 'Juiz de Fora',
+    61 : 'Brasília',
+    71 : 'Salvador'
+    }
+
+    askDDD = int(input('Deseja buscar por qual DDD?'))
+
+    if askDDD in DDDs:
+        DDDassociado = DDDs[askDDD]
+        print("\nO DDD " , askDDD , ' é da cidade de ' , DDDassociado)
+    else:
+        print("\nEsse DDD não esta cadastrado")
+        
+
+# descobrirDDD()
+
